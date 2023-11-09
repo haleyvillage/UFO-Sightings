@@ -1,0 +1,24 @@
+Create an Anaconda Environment.. 
+ You only need to create it once like this:
+ conda create -n 320_ufo python=3.10 anaconda
+
+Activate the environment:
+ conda activate 320_ufo
+
+Navigate to or create a directory for the project
+ mkdir name_of_directory
+
+Type the command:
+ notepad.exe nuforc_scrape.py
+Then copy and paste the python script into the text file and save it
+
+Create your ufo_database by typing
+ sqlite3 ufo_database
+
+Create the ufo_sightings table by typing the following at the sqlite> prompt
+ CREATE TABLE ufo_sightings ( Characteristics text, Duration text, Location text, Location_Details text, No_Of_Observers text,     Occurred text, Posted text , Reported text, Shape text, comments_and_content text);
+
+Exit out of sqlite3 by pressing ctrl-c
+
+Run nuforc_scrape.py by typing
+ python nuforc_scrape.py
